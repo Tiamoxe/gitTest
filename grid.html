@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .content {
+      display: grid;
+
+      grid-template-columns: 100px 1fr;
+      /*两列，一个占1/3，一个占2/3*/
+
+      /* grid-template-rows: 100px; */
+      row-gap: 20px;
+      /*行间距*/
+      column-gap: 20px;
+      /*列间距*/
+      gap: 20px
+        /*间距缩写 行列间距都为20px*/
+    }
+
+    .b {
+      border: 1px solid black;
+      margin: 0px -1px -1px 0px;
+      text-align: center;
+      line-height: 100px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <div class="b">1</div>
+    <div class="b">2</div>
+  </div>
+  <script>
+    var a = 1;
+    {
+      a = 3;
+      function a() { }
+      a = 4;
+      function a() { }
+      a = 5
+    }
+    console.log(a)   //4
+
+  </script>
+
+</body>
+
+</html>
